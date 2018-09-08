@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NJFAQ_Example' do
+  pod 'NJFAQ', :path => '../'
+
+  target 'NJFAQ_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
