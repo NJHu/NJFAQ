@@ -14,7 +14,11 @@ class NJFAQTableController: NJStaticTableViewController {
         super.viewDidLoad()
         nj_isBackActionBtnHidden = true
         title = "常见问题"
-
+        
+        var contentInset = self.tableView.contentInset
+        contentInset.bottom += self.tabBarController?.tabBar.frame.height ?? 0
+        self.tableView.contentInset = contentInset
+        
         add(NJItem(title: "1", operation: {[weak self] (indexpath, group) in
             print(indexpath)
         }))?.add(NJItem(title: "2", operation: {[weak self] (indexpath, group) in
