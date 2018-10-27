@@ -16,7 +16,7 @@ import NJKit
         let nav = NJNavigationController(rootViewController: childController)
         
         childController.tabBarItem.image = UIImage.nj_image(name: "FAQ", bundleClass: Target_NJFAQ.self)
-        childController.tabBarItem.selectedImage = UIImage.nj_image(name: "faq_sel", bundleClass: Target_NJFAQ.self)?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        childController.tabBarItem.selectedImage = UIImage.nj_image(name: "faq_sel", bundleClass: Target_NJFAQ.self)?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
         childController.tabBarItem.title = "常见问题"
         childController.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -3);
         
